@@ -45,15 +45,16 @@ while True:
         
     print("Simulation has ended")
     print("-------------Inputted values-------------")
-    print("Drop chance: ", itemDropChance)
     print("Number of tries: ", wantedItterations)
+    print("Drop chance: ", itemDropChance)
     print("-------------Expected values-------------")
     print("Items expected to drop: ", wantedItterations*(itemDropChance/100))
     print("Expected average gap between drops: ", ((wantedItterations - wantedItterations*(itemDropChance/100)) / (wantedItterations*(itemDropChance/100))))
     print("-------------Simulated values-------------")
     print("Item dropped: ", dropCount)
+    print("Average tries between drops ", averageTries)
     print("Smallest gap between drops: ",minTries)
     print("Biggest gap between drops: ", maxTries)
-    print("Average tries between drops ", averageTries)
+
 
 
